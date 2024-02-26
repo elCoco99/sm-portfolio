@@ -1,0 +1,29 @@
+/* body */
+
+body {
+  min-width: none;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.img-display {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px
+}
+
+.img-display img {
+  width: 100%;
+  height: 550px;
+}
+
+.img-display img {
+  width: 100%;
+  height: 550px;
+  transition: opacity 250ms;
+}
+
+.img-display img:hover {
+  opacity: 0.8;
+}

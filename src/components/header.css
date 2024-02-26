@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80px;
+  justify-content: space-between;
+  padding-right: 15%;
+}
+
+.nav-bar img {
+  width: 100px;
+}
+
+.nav-bar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  list-style-type: none;
+  color: #242424;
+  font-family: "Smooch Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 100%;
+  padding: 0;
+}
+
+.nav-items li a {
+  color: #242424;
+  border-radius: 10px;
+  transition: color, background-color 300ms;
+  height: 100%;
+  padding: 20px;
+}
+
+.nav-items li a:hover {
+  color: whitesmoke;
+  background-color: black;
+  
+}
