@@ -9,7 +9,7 @@ export function Display() {
             return (
               <img key={pic.id} src={pic.url} loading='lazy'/>
             )
-          })
+          }).slice(0, 12)
         }
       </div>
   )
