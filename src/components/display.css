@@ -1,21 +1,34 @@
 .img-display {
   width: 100%;
+  min-width: 390px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px
+  gap: 5px;
 }
 
-.img-display img {
-  width: 100%;
+@media (max-width: 900px) {
+  .img-display {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .img-display {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.img-display a {
   height: 550px;
+  transition: opacity 300ms;
 }
 
-.img-display img {
-  width: 100%;
-  height: 550px;
-  transition: opacity 250ms;
-}
-
-.img-display img:hover {
+.img-display a:hover {
   opacity: 0.8;
+}
+
+.img-display img{
+  width: 100%;
+  height: 100%;
 }

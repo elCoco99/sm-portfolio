@@ -2,6 +2,7 @@ import './App.css'
 import { Header } from './components/Header'
 import { Cover } from './components/Cover'
 import { Display } from './components/Display'
+import { Footer } from './components/Footer'
 
 
 // el resto de links de las imagenes se encuentran en ./images/links.txt
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Cover url = {CoverUrl}/>
       <Display />
+      <Footer/>
     </>
   )
 }

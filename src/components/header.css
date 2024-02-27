@@ -1,14 +1,23 @@
 nav {
   display: flex;
   flex-flow: row nowrap;
-  height: 80px;
+  height: 70px;
   justify-content: space-between;
   padding-right: 15%;
+  z-index: 3;
 }
 
-.nav-bar img {
-  width: 100px;
+.nav-title h1 {
+  font-family: "Cinzel", serif;
+  color: #242424;
+  font-size: 2rem;
+  padding-left: 20px;
+  user-select: none;
 }
+
+/* .nav-bar img {
+  width: 100px;
+} */
 
 .nav-bar ul {
   width: 100%;
@@ -27,13 +36,12 @@ nav {
 .nav-items li a {
   color: #242424;
   border-radius: 10px;
-  transition: color, background-color 300ms;
+  transition: font-weight 400ms;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .nav-items li a:hover {
-  color: whitesmoke;
-  background-color: black;
+  font-weight: 900;
   
 }

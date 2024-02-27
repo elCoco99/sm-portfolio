@@ -7,9 +7,11 @@ export function Display() {
         {
           pics.map(pic => {
             return (
-              <img key={pic.id} src={pic.url} loading='lazy'/>
+              <a key={pic.id} href={pic.url} target='_blank'> 
+                <img  src={pic.url} loading='lazy'/>
+              </a>
             )
-          }).slice(0, 12)
+          })
         }
       </div>
   )
