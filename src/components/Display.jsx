@@ -7,9 +7,18 @@ export function Display() {
         {
           pics.map(pic => {
             return (
-              <a key={pic.id} href={pic.url} target='_blank'> 
-                <img  src={pic.url} loading='lazy'/>
-              </a>
+              <div className='img-cont' key={pic.id} >
+                <a key={pic.id} href={pic.url} target='_blank'> 
+                  <img src={pic.url} loading='lazy' />
+                </a>
+                <div className='description-info'>
+                  <h2>Photo Title</h2>
+                  <p>pic description / place / album</p>
+
+                </div>
+              </div>
+
+
             )
           })
         }

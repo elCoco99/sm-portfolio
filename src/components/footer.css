@@ -24,7 +24,8 @@ footer {
 ion-icon {
   color: #242424;
   font-size: 50px;
-  gap: 10px
+  gap: 10px;
+  opacity: 0.8;
 }
 
 .footer-links {
@@ -62,5 +63,5 @@ ion-icon {
   display: flex;
   justify-content: space-between;
   font-family: "Smooch Sans";
-  color: #242424
+  color: #242424;
 }

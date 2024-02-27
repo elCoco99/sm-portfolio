@@ -32,3 +32,18 @@
   width: 100%;
   height: 100%;
 }
+
+.img-cont {
+  position: relative;
+  width: 100%;
+}
+
+.img-cont .description-info {
+  position: absolute;
+  color: #fff;
+  bottom: 0px;
+  right: 15px;
+  text-align: right;
+  font-family: "Smooch Sans";
+  font-size: 1.2em;
+  }
