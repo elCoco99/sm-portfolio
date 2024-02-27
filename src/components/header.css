@@ -6,7 +6,9 @@ nav {
   padding-right: 15%;
   z-index: 3;
 }
-
+.nav-title {
+  min-width: 265px;
+}
 .nav-title h1 {
   font-family: "Cinzel", serif;
   color: #242424;
@@ -31,6 +33,10 @@ nav {
   font-weight: 600;
   height: 100%;
   padding: 0;
+}
+
+.nav-bar li {
+  text-wrap: nowrap;
 }
 
 .nav-items li a {

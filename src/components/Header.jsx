@@ -2,7 +2,7 @@ import './header.css'
 
 export function Header() {
   return (
-    <nav className="nav-bar">
+    <nav id='header' className="nav-bar">
       <div className="nav-title">
         <h1>Marwa Studio</h1>
       </div>
