@@ -6,16 +6,16 @@ export function Footer() {
     <footer id='footer'>
       <div className='footer-cont'>
         <div className='icons-cont'>
-          <div className='fb si'>
+          <div className='fb'>
             <ion-icon name="logo-facebook"></ion-icon>
           </div>
-          <div className='ig si'>
+          <div className='ig'>
             <ion-icon name="logo-instagram"></ion-icon>
           </div>
-          <div className='tw si'>
+          <div className='tw'>
             <ion-icon name="logo-twitter"></ion-icon>
           </div>
-          <div className='li si'>
+          <div className='li'>
             <ion-icon name="logo-linkedin"></ion-icon>
           </div>
         </div>
@@ -24,6 +24,7 @@ export function Footer() {
             <li><a href='#'>About</a></li>
             <li><a href='#'>Recent Work</a></li>
             <li><a href='#'>Contact</a></li>
+            <li><a href='#header'>Back Top</a></li>
           </ul>
         </div>
         <div className='copyright'>
