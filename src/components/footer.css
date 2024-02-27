@@ -25,7 +25,12 @@ ion-icon {
   color: #242424;
   font-size: 50px;
   gap: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
+  transition: opacity 300ms;
+}
+
+ion-icon:hover {
+  opacity: 1;
 }
 
 .footer-links {
