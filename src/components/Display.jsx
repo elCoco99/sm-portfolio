@@ -14,7 +14,6 @@ export function Display() {
                 <div className='description-info'>
                   <h2>Photo Title</h2>
                   <p>pic description / place / album</p>
-
                 </div>
               </div>
 

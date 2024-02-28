@@ -17,6 +17,32 @@ nav {
   user-select: none;
 }
 
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 878px) {
+  .nav-bar {
+    width: 100vw;
+    justify-content: center;
+  }
+  .nav-title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-title h1 {
+    padding: 0;
+  }
+  .nav-items ul{
+    padding: 0;
+  }
+}
+
 /* .nav-bar img {
   width: 100px;
 } */
@@ -31,8 +57,6 @@ nav {
   font-family: "Smooch Sans";
   font-size: 1.5rem;
   font-weight: 600;
-  height: 100%;
-  padding: 0;
 }
 
 .nav-bar li {
@@ -44,7 +68,6 @@ nav {
   border-radius: 10px;
   transition: font-weight 400ms;
   height: 100%;
-  padding: 10px;
 }
 
 .nav-items li a:hover {
