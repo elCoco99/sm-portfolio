@@ -12,16 +12,9 @@
   }
 }
 
-@media (max-width: 640px) {
-  .img-display {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-
 .img-display a {
   height: 550px;
-  transition: opacity 300ms;
+  transition: opacity 500ms;
 }
 
 .img-display a:hover {
@@ -46,4 +39,8 @@
   text-align: right;
   font-family: "Smooch Sans";
   font-size: 1.2em;
+  }
+
+.description-info p, .description-info h2 {
+    user-select: none;
   }
