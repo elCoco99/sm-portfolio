@@ -1,6 +1,5 @@
 .img-display {
   width: 100%;
-  min-width: 390px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;

@@ -4,7 +4,7 @@ export function Header() {
   return (
     <nav id='header' className="nav-bar">
       <div className="nav-title">
-        <h1>Marwa Studio</h1>
+        <h1 translate='no'>Marwa Studio</h1>
       </div>
       <div className='nav-items'>
         <ul>
