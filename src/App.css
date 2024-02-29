@@ -6,3 +6,8 @@ body {
   flex-flow: column nowrap;
 }
 
+@media (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+}
