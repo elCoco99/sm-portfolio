@@ -16,6 +16,19 @@ nav {
   user-select: none;
 }
 
+.nav-items-cont {
+  width: 60%;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.nav-items {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 70%;
+  justify-content: flex-end;
+}
+
 .nav-bar {
   display: flex;
   flex-flow: row wrap;
@@ -24,11 +37,12 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 878px) {
+@media (max-width: 900px) {
   .nav-bar {
+    flex-flow: column wrap;
     width: 100%;
-    justify-content: center;
   }
+
   .nav-title {
     width: 100%;
     text-align: center;
@@ -38,28 +52,34 @@ nav {
   .nav-title h1 {
     padding: 0;
   }
-  .nav-items ul{
+  .nav-items {
     display: flex;
-    max-width: 20px;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
+    max-width: 100%;
+    padding: 0;
+  }
+  .nav-items-cont {
+    width: 100%;
   }
 }
 
-/* .nav-bar img {
-  width: 100px;
-} */
+@media (max-width: 450px) {
+  .nav-items {
+    width: 100%;
+  }
+}
 
 .nav-bar ul {
   display: flex;
   flex-direction: row;
-  gap: 80px;
   list-style-type: none;
   color: #242424;
   font-family: "Smooch Sans";
   font-size: 1.5rem;
   font-weight: 600;
-  margin-right: 40px;
   justify-content: space-evenly;
+  padding: 0;
 }
 
 .nav-bar li {
@@ -71,6 +91,7 @@ nav {
   border-radius: 10px;
   transition: font-weight 400ms;
   height: 100%;
+  width: fit-content;
 }
 
 .nav-items li a:hover {
