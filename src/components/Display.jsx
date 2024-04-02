@@ -23,6 +23,10 @@ export function Display() {
     return { picUrl }
   }
 
+  function closeModal() {
+    setModal(false)
+  }
+
   return (
     <>
       <div className='img-display'>
@@ -53,7 +57,7 @@ export function Display() {
           <div className='modal-content-flex'>
             <div className='inner-modal-cont'>
               <div className='relative-cont'>
-                <span onClick={changeModal} className='close'>
+                <span onClick={closeModal} className='close'>
                   ×
                 </span>
                 <img src={selectedPic} alt='' />
