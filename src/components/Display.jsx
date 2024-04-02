@@ -6,12 +6,21 @@ export function Display() {
   const [selectedPic, setSelectedPic] = useState('')
   const [modal, setModal] = useState(false)
 
+  const body = document.querySelector('body')
+  body.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      setModal(false)
+    }
+  })
+
   function changeModal(e) {
+    const modal = document.querySelector('.modal')
     const picUrl = e.target.src
     setSelectedPic(picUrl)
     setModal(!modal)
     return { picUrl }
   }
+
   return (
     <>
       <div className='img-display'>

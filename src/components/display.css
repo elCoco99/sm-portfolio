@@ -9,6 +9,9 @@
   .img-display {
     grid-template-columns: repeat(2, 1fr);
   }
+  .relative-cont {
+    width: 80%;
+  }
 }
 
 .img-display-img {
@@ -54,7 +57,7 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
 }
 
 .modal-content-flex {
@@ -63,7 +66,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
+  height: 100%;
 }
 
 .inner-modal-cont {
@@ -72,17 +75,17 @@
   justify-content: center;
   align-items: center;
   width: 450px;
-  max-width: 50%;
+  aspect-ratio: 16/9;
   padding-bottom: 0;
 }
 
 .relative-cont {
   position: relative;
-  width: 100%;
   height: 100%;
 }
 
 .modal span {
+  color: gray;
   cursor: pointer;
   justify-content: flex-end;
   position: absolute;
@@ -94,7 +97,7 @@
 
 .modal .description-info {
   position: absolute;
-  color: #fff;
+  color: g;
   bottom: 0px;
   right: 15px;
   text-align: right;
@@ -104,12 +107,12 @@
 }
 
 .modal span:hover {
-  color: gray;
+  color: black;
 }
 
 .inner-modal-cont img {
-  width: 100%;
-  max-height: 100%;
+  max-width: 100%;
   border: 1px solid black;
   border-radius: 10px;
+  max-height: 90vh;
 }
