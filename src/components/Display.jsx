@@ -14,10 +14,12 @@ export function Display() {
   })
 
   function changeModal(e) {
-    const modal = document.querySelector('.modal')
     const picUrl = e.target.src
+    if (picUrl === undefined) return
+
     setSelectedPic(picUrl)
     setModal(!modal)
+    console.log(picUrl)
     return { picUrl }
   }
 
